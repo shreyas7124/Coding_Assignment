@@ -1,0 +1,112 @@
+/* Add your CSS styles here */
+/* ... (Previous CSS styles) ... */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 70%;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .close {
+    color: #888;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .inline-inputs {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inline-inputs input,
+  .inline-inputs select {
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto; /* Add this line to horizontally center the container */
+  }
+  
+
+  .form-container {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .bg-blue {
+    background-color: #007bff;
+    padding: 20px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #007bff; /* Set the desired blue color */
+  }
+
+  .footer {
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  

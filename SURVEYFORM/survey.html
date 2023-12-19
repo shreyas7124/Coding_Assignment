@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-blue">
+  <h1 class="heading">Survey Form</h1>
+  <div class="container">
+
+    <div class="form-container">
+  <form id="surveyForm">
+    <div class="form-group">
+      <label for="fullName">Full Name:</label>
+      <div class="inline-inputs">
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <div class="inline-inputs">
+        <input type="text" id="dob" placeholder="MM/DD/YYYY">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <div class="inline-inputs">
+        <select id="country">
+          <option value="">Select Country</option>
+          <!-- Add your country options here -->
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <!-- Add more countries -->
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Gender:</label>
+      <div class="inline-inputs">
+        <label><input type="checkbox" id="male" value="Male"> Male</label>
+        <label><input type="checkbox" id="female" value="Female"> Female</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="profession">Profession:</label>
+      <div class="inline-inputs">
+        <input type="text" id="profession">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <div class="inline-inputs">
+        <input type="email" id="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="mobile">Mobile Number:</label>
+      <div class="inline-inputs">
+        <input type="tel" id="mobile">
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="button" onclick="submitForm()">Submit</button>
+      <button type="button" onclick="resetForm()">Reset</button>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Survey Details</h2>
+      <p id="surveyDetails"></p>
+    </div>
+  </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; Survey Form || Shreyas S</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
